@@ -20,6 +20,10 @@ class DatabaseSeeder extends Seeder
         //    'name' => 'Test User',
         //    'email' => 'test@example.com',
         //]);
-        Offer::factory(5)->create();
+        //Offer::factory(5)->create();
+        Offer::factory()->create([
+            'offers' => '',
+            'updates' => '',
+        ]);
     }
 }
