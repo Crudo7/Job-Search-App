@@ -11,6 +11,7 @@ class Offer extends Model
 
     protected $fillable = [
         "offer",
-        "updates",
+        "workstation",
+        "state",
     ];
 }
