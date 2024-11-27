@@ -15,24 +15,14 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($offers as $offer)
                 <tr>
                     <td>Valor 1</td>
                     <td>Valor 2</td>
                     <td>Valor 3</td>
                     <td>Valor 4</td>
                 </tr>
-                <tr>
-                    <td>Valor 5</td>
-                    <td>Valor 6</td>
-                    <td>Valor 7</td>
-                    <td>Valor 8</td>
-                </tr>
-                <tr>
-                    <td>Valor 9</td>
-                    <td>Valor 10</td>
-                    <td>Valor 11</td>
-                    <td>Valor 12</td>
-                </tr>
+                @endforeach
             </tbody>
         </table>
     </body>
