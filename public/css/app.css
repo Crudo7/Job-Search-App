@@ -1,33 +1,54 @@
+@import url(reset.css);
 @import url(footer.css);
 @import url(header.css);
 
 
-table{
-    border-collapse;
-    margin: 20px;
-}
-.tableOffer {
-    border-collapse: collapse;
-    margin: 20px;
-    background-color: blue;
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    background-color: #fffdf7;
+    height: 100%;
 }
 
-.columnTable{
+main{
+    display: flex;
+    justify-content: center;
+}
+tr{
+    border: 10px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
     padding: 20px;
-    background-color: yellow;
+    border: 10px solid black;
 }
 
 th{
-    padding: 10px;
     background-color:#929292c1;
-    border: 1px #474747c1 solid;
-}
+    border: 10px solid black;
+    border-collapse: collapse;
+} 
 
-td {
+ td {
     padding-right: 20px;
     padding-left: 20px;
     min-height: 500px;
-    border: 1px #929292c1 solid;
     max-width: 200px;
-    background-color: white;
+    border: 10px solid black;
+    border-collapse: collapse;
+    text-align: left;
+} 
+
+th, td {
+    padding: 15px;
+    text-align: left;
 }
+
+  thead:hover {background-color: coral;}

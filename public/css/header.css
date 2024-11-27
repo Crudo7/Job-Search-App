@@ -1,4 +1,16 @@
 header{
     display: flex;
-    background-color: blue; !important
+    justify-content: center;
+    background-color: #1227a28f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    height: 100px;
+    align-items: center;
+}
+
+.headerBanner{
+    width: fit-content;
+    align-content: center;
+    margin: 0 auto;
+    padding: 10px;
 }

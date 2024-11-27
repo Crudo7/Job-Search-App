@@ -1,3 +1,3 @@
 <header>
-    <h1>Job Search App</h1>
+    <h1>JOB SEARCH APP</h1>
 </header>

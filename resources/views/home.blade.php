@@ -3,28 +3,26 @@
 
 @section('content')
 
-<div>
-    <body>
-        <table class="tableOffer">
-            <thead>
-                <tr class="columnTable">
-                    <th>Columna 1</th>
-                    <th>Columna 2</th>
-                    <th>Columna 3</th>
-                    <th>Columna 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($offers as $offer)
+<div class="offers">
+    <table class="tableOffer">
+        <thead>
+            <tr>
+                <th>Create</th>
+                <th>Offer</th>
+                <th>Workstation</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($offers as $offer)
                 <tr>
-                    <td>Valor 1</td>
-                    <td>Valor 2</td>
-                    <td>Valor 3</td>
-                    <td>Valor 4</td>
+                    <td>{{$offer->created_at}}</td>
+                    <td>{{$offer->offers}}</td>
+                    <td>{{$offer->workstation}}</td>
+                    <td>{{$offer->state}}</td>
                 </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </body>
+            @endforeach
+        </tbody>
+    </table>
 </div>
 @endsection
