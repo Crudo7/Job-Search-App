@@ -8,9 +8,3 @@ header{
     align-items: center;
 }
 
-.headerBanner{
-    width: fit-content;
-    align-content: center;
-    margin: 0 auto;
-    padding: 10px;
-}
