@@ -17,8 +17,10 @@ class OfferFactory extends Factory
     public function definition(): array
     {
         return [
-            'offers' => $this->faker->realText($maxNbChars = 200),
-            'updates' => $this->faker->imageUrl(),
+            /*
+            'entry' => $this->faker->realText($maxNbChars = 200),
+            'emotion' => $this->faker->imageUrl(),
+            */
         ];
     }
-}
+}    
