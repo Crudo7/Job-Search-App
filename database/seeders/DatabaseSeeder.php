@@ -22,9 +22,9 @@ class DatabaseSeeder extends Seeder
         //]);
         //Offer::factory(5)->create();
         
-        Offer::factory()->create([
-            'offers' => 'holajsndfanfaanfajdnfte',
-            'workstation' => 'texto prueba',
+        Offer::factory(25)->create([
+            'offers' => 'Empresa',
+            'workstation' => 'Puesto de trabajo',
             'state' => 'abierto',
 
         ]);

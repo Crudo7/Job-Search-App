@@ -30,10 +30,14 @@ table {
     margin: 20px;
     padding: 20px;
     border: 1px solid black;
+    width: 100%px;
+    overflow-y:scroll;
+    height:520px;
+    display:block;
 }
 
 th{
-    background-color:#929292c1;
+    background-color:#6072dc8d;
     border: 1px solid black;
     border-collapse: collapse;
 } 
@@ -42,7 +46,6 @@ th{
     padding-right: 20px;
     padding-left: 20px;
     min-height: 500px;
-    max-width: 200px;
     border: 1px solid black;
     border-collapse: collapse;
     text-align: left;
@@ -53,4 +56,5 @@ th, td {
     text-align: left;
 }
 
-  thead:hover {background-color: coral;}
+
+.borders:hover {background-color: rgb(242, 241, 241)}

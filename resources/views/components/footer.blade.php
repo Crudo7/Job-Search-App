@@ -1,9 +1,9 @@
 <footer>
-    <div class="footerJob">
-        <div class="githubCrudo">
+
+    <div class="firstFooterSection">
+        <div class="github">  
             <a href="https://github.com/Crudo7" class="github">
                 <img src="https://res.cloudinary.com/djdpt7dqi/image/upload/v1732182053/github-logo.png" alt="github logo">
-                <h4>Crudo7</h4>
             </a>
         </div>
     </div>
