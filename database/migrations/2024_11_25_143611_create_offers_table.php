@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('offers');
             $table->string('updates');
+
+
+
             $table->timestamps();
         });
     }

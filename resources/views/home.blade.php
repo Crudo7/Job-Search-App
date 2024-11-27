@@ -5,9 +5,9 @@
 
 <div>
     <body>
-        <table>
+        <table class="tableOffer">
             <thead>
-                <tr>
+                <tr class="columnTable">
                     <th>Columna 1</th>
                     <th>Columna 2</th>
                     <th>Columna 3</th>

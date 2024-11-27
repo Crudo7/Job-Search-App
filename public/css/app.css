@@ -1,0 +1,21 @@
+header{
+    background-color: blue;
+}
+
+
+.tableOffer {
+    border-collapse: collapse;
+    margin: 20px;
+    background-color: blue;
+}
+
+.columnTable{
+    padding: 20px;
+    background-color: yellow;
+}
+
+th{
+    padding: 10px;
+    background-color:#929292c1;
+    border: 1px #474747c1 solid;
+}
