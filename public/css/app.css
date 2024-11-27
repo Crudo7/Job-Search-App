@@ -34,6 +34,7 @@ table {
     overflow-y:scroll;
     height:520px;
     display:block;
+    table-layout: fixed;
 }
 
 th{
