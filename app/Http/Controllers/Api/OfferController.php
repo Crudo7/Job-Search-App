@@ -14,8 +14,8 @@ class OfferController extends Controller
     public function index()
     {
         //
-        $Offers = Offer::all();
-        return response()->json($Offers , 200);
+        $offers = Offer::all();
+        return response()->json($offers , 200);
     }
 
     /**
@@ -23,7 +23,7 @@ class OfferController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -31,7 +31,13 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $offer = Offer::create([
+            'offer' => $request->offer,
+            'workstation' => $request->workstation,
+            'state' => $request->state
+        ]);
+        $offer->save();
+        return response()->json($offer, 200);
     }
 
     /**

@@ -22,8 +22,8 @@ class DatabaseSeeder extends Seeder
         //]);
         //Offer::factory(5)->create();
         
-        Offer::factory(25)->create([
-            'offers' => 'Empresa',
+        Offer::factory(10)->create([
+            'offer' => 'Empresa',
             'workstation' => 'Puesto de trabajodfsdfsdfsdfsdfsdfsdfsfsdfa',
             'state' => 'abierto',
 
