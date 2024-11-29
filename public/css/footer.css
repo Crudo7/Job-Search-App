@@ -1,8 +1,8 @@
 
 footer{
-    height: 160px;
+    height: 167px;
     width: 100%;
-    background-color: var(--secondary-dark);
+    background-color: #1227a28f;
     display: grid;
     grid-template-rows: auto 1fr;
 }
@@ -17,9 +17,9 @@ footer{
 }
 .github:hover{
     box-shadow: 
-                inset 15px 7px 8px #000000;
-                inset: 5px 7px 8px #569bd3;
-    background-color: #f0e59b;
+                inset 1px 1px 8px #e86e78;
+                inset: 1px 1px 8px #569bd3;
+    background-color: #e86e78;
 
 }
 
