@@ -14,4 +14,7 @@ class Offer extends Model
         "workstation",
         "state",
     ];
+    public function updates(){
+        return $this->hasMany(Offer::class);
+    }
 }
