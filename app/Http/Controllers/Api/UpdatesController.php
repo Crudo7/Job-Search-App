@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Offer;
+use App\Models\Updates;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +14,7 @@ class UpdatesController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(Updates::all(), 200);
     }
 
     /**
@@ -27,32 +28,14 @@ class UpdatesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, $offerId)
+    public function store(Request $request, string $id)
     {
-        $validated = $request -> validate([
-            'news' => 'required|array'
+        $updates = Updates::create([
+            'offer_id' => (int)$id,
+            'news' => $request->news,
         ]);
-        $offer = Offer::find($offerId);
-
-        if (!$offer){
-            return response()->json([
-                'message' => 'el trabajo no existe',
-            ],404);
-        }
-        $updatesData = collect($validated['news'])->map(function ($newsItem) use ($offer){
-            return [
-                'offer_id' => $offer->id,
-                'news' => $newsItem,
-            ];
-        });
-
-        $offer->updates()->createMany($updatesData);
-
-        return response()->json([
-            'message' => 'Actualización añadida correctamente',
-            'offer' => $offer->load('updates'),
-        ]);
-    }   
+        return response()->json($updates, 200); 
+    }
     
 
     /**

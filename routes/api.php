@@ -11,4 +11,5 @@ Route::delete('/offer/{id}',[OfferController::class,'destroy'])->name('apidestro
 Route::put('/offer/{id}',[OfferController::class,'update'])->name('apidestroy');
 Route::get('/offer/{id}',[OfferController::class, 'show'])->name('apishow');
 
-Route::post('/offers/{offerId}/updates',[UpdatesController::class,'store']);
+Route::post('/offer/{offerId}/updates',[UpdatesController::class,'store'])->name('apistoreUpdates');
+Route::get('/offer/{offerId}/updates',[UpdatesController::class,'index'])->name('apihomeUpdates');
