@@ -9,7 +9,7 @@
             <th class="borders">OFFERS</th>
             <th class="borders">WORKSTATIONS</th>
             <th class="borders">STATES</th>
-            <th class="borders">News</th>
+            <th class="borders">UPDATES</th>
         </tr>
     </thead>
     <tbody>
@@ -20,7 +20,7 @@
                 <td class="borders">{{$offer->offer}}</td>
                 <td class="borders">{{$offer->workstation}}</td>
                 <td class="borders">{{$offer->state}}</td>
-                <td>
+                <td class="borders">
                     <ul>
                     @forelse ($offer->updates as $update)
                         <li>{{$update->news}}</li>

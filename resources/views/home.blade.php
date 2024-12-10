@@ -12,7 +12,7 @@
                 <th class="borders">OFFERS</th>
                 <th class="borders">WORKSTATIONS</th>
                 <th class="borders">STATES</th>
-                <th class="borders">News</th>
+                <th class="borders">SHOW</th>
             </tr>
         </thead>
         <tbody>
@@ -24,13 +24,7 @@
                     <td class="borders">{{$offer->workstation}}</td>
                     <td class="borders">{{$offer->state}}</td>
                     <td class="borders">
-                        <ul>
-                        @forelse ($offer->updates as $update)
-                            <li>{{$update->news}}</li>
-                        @empty
-                            <li>No hay seguimiento de la oferta</li>
-                        @endforelse
-                        </ul> 
+                       <a href="{{route('show',$offer->id)}}">🔍</a>
                     </td>
                 </tr>
             @endforeach
