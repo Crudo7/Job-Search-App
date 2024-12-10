@@ -1,5 +1,6 @@
 @import url(footer.css);
 @import url(header.css);
+@import url(show.css);
 
 
 body{
@@ -55,6 +56,14 @@ th{
     padding: 15px;
     min-width: 20vh;
 } 
+
+ul{
+    list-style:none;
+    padding: 0px;
+}
+li{
+    padding: 0px;
+}
 
  td {
     padding-right: 20px;

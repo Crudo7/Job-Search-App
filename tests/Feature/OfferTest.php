@@ -14,11 +14,20 @@ class OfferTest extends TestCase
         
         $this->withoutExceptionHandling();
 
-        Offer::all();
 
         $response = $this->get('/');
 
         $response -> assertStatus(200)
                   ->assertViewIs('home');
+    }
+
+    public function test_showIsWorking(){
+        Offer::create([
+            'offer'=>'oferta',
+            'workstation'=>'trabajo',
+            'state'=>'abierto'
+        ]);
+        $response=$this->get('/offer/1');
+        $response->assertStatus(200)->assertViewIs('show');
     }
 }

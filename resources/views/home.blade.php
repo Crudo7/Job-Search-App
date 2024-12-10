@@ -23,7 +23,7 @@
                     <td class="borders">{{$offer->offer}}</td>
                     <td class="borders">{{$offer->workstation}}</td>
                     <td class="borders">{{$offer->state}}</td>
-                    <td>
+                    <td class="borders">
                         <ul>
                         @forelse ($offer->updates as $update)
                             <li>{{$update->news}}</li>
